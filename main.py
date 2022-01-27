@@ -38,7 +38,10 @@ def createPassword():
         password += random.choice(options)
     return (password,length)
 
-
-if isValid(createPassword()[0], createPassword()[1]):
-    print (createPassword()[0])
+while (True):
+    if isValid(createPassword()[0], createPassword()[1]):
+        print (createPassword()[0])
+        break
+    else:
+        continue
 
